@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: rgb(224, 120, 207);
+            border-radius: 9px;
+            padding: 10px;
+        } */
+
+        /* .box::first-line{
+            background-color: rgba(235, 217, 168, 0.685);
+            color: rgb(0, 0, 0);
+        } */
+
+        /* .boxes *{
+            color: black;
+            background-color: rgb(233, 162, 221);
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 9px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+        }
+
+        p, a, .box, [data-color="primary"]{
+            background-color: rgb(255, 198, 246);
+            margin-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: rgb(255, 198, 246);
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: rgb(255, 198, 246);
+        } */
+
+        .boxes::before{
+            content: "Harry sir is our Coding teacher and he is the best teacher in the world.He gives a free Sigma Web development course on YouTube and he is the best teacher in the world and when he wants to earn money he will make this course paid and he earn lakhs of rupees but he dont use that way !";
+        }
+
+        .boxes::after{
+            content: "He is the king;";
+            color:black;
+            background-color: rgb(255, 198, 246);
+            border: 2px solid black;
+            border-radius: 9px;
+            padding: 10px;
+            display: block;
+            margin: 10px;
+        }
+
+        ::selection{
+            background-color: rgb(255, 198, 246);
+            color:  aqua;
+        }
+
+        .box::first-letter{
+            color: peru;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: rgb(255, 198, 246);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">lore ipsum dolor sit amet consectetur adipiscing elit.</div>
+        <div class="box">I am the second box.</div>
+        <div class="box">I am the third box.</div>
+        <input type="text " placeholder="Enter your name" >
+    </div>
+    
+</body>
+</html>

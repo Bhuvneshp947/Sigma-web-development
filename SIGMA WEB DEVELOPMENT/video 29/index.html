@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Beautiful Destinations</title>
+    <!-- Importing Baloo Bhai 2 and Poppins fonts from Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f0f4f8;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allows cards to wrap into lines naturally */
+            gap: 24px;       /* Adds neat spacing between the multiple cards */
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .card{
+            width: 360px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #d9e2ec;
+            padding: 16px;
+            height: 555px; /* Slightly increased to fit font adjustments */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) ;
+        }
+
+        .card-image-container{
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-tags{
+            gap: 8px;
+            display: flex;
+            margin: 15px 12px;
+        }
+
+        .Tags{
+            font-family: 'Baloo Bhai 2', sans-serif; /* Applied custom font */
+            font-weight: 700;
+            border: 2px solid black;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+        }
+
+        .heading{
+            font-family: 'Poppins', sans-serif; /* Applied custom font */
+            font-weight: 700;
+            margin: 12px;
+            font-size: 1.5rem;
+            color: #102a43;
+        }
+
+        .details{
+            padding: 0 12px;
+            font-family: 'Poppins', sans-serif; /* Applied custom clean font */
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #627d98; /* Balanced grey color */
+            text-align: center; /* Helper alignment to assist paragraph structures */
+        }
+
+        /* Formats text lines into a managed pyramid view (Long line -> Medium line -> Short line) */
+        .details p {
+            display: inline-block;
+            text-align: justify;
+            text-align-last: center;
+            word-spacing: -1px;
+        }
+
+        .button{
+            text-align: center;
+        }
+
+        .button button{
+            padding: 8px 22px;
+            border-radius: 17px;
+            border: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            background-color: #86cfecde;
+            color: rgb(77, 104, 228);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .button button:hover{
+            background-color: #60c3eb;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card 1: Kashmir -->
+    <div class="card">
+        <div class="card-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXCsW10nAjoXFTDiXZW7Y-fPj9YPUX0aDKyIj-R9lhYw&s=10" alt="Kashmir" class="card-image">
+        </div>
+
+        <div class="card-content">
+            <div class="card-tags">
+                <span class="Tags">Nature</span>
+                <span class="Tags">Lake</span>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>Kashmir</h2>
+        </div>
+
+        <div class="details">
+            <p>
+                It captures the crystal-clear alpine waters of Lake Hintersee, creating a near-perfect mirror reflection of the surrounding forest and majestic mountain range.
+            </p>
+        </div>
+        
+        <div class="button">
+            <button>Buy Ticket</button>
+        </div>
+    </div>
+
+    <!-- Card 2: Taizhou -->
+    <div class="card">
+        <div class="card-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoA8R6GGuH3w6gx8TYh5g_sfurW07GRXebZ-Xun2VoCg&s=10" alt="Taizhou" class="card-image">
+        </div>
+
+        <div class="card-content">
+            <div class="card-tags">
+                <span class="Tags">Hills</span>
+                <span class="Tags">Mountain</span>
+                <span class="Tags">Glass Bridge</span>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>Taizhou</h2>
+        </div>
+
+        <div class="details">
+            <p>
+                Experience the thrilling architecture across lush green valleys, walking high over deep mountain chasms along structural pathways engineered cleanly right into the raw peak landscapes.
+            </p>
+        </div>
+        
+        <div class="button">
+            <button>Buy Ticket</button>
+        </div>
+    </div>
+
+    <!-- Card 3: Shirakawa-go -->
+    <div class="card">
+        <div class="card-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhX5qi6CUXfzd03dJyyb60IbG6Y89ZeY2eNjkR1P3Lg&s=10" alt="Shirakawa go" class="card-image">
+        </div>
+
+        <div class="card-content">
+            <div class="card-tags">
+                <span class="Tags">Cold</span>
+                <span class="Tags">Village</span>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>Shirakawa-go</h2>
+        </div>
+
+        <div class="details">
+            <p>
+                A historic mountain settlement blanketed under deep magical layers of winter snow, illuminating cozy traditional Gassho-style thatched farmhouses glowing softly throughout cold quiet evenings.
+            </p>
+        </div>
+        
+        <div class="button">
+            <button>Buy Ticket</button>
+        </div>
+    </div>
+
+</body>
+</html>

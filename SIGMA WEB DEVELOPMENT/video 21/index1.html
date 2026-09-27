@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+
+    <header class="hero">
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+
+        <div class="hero-content">
+            <h1>What is CSS?</h1>
+            <p>
+                CSS stands for Cascading Style Sheets. It is the language used to style HTML elements,
+                control layout, add animations, change colors, and make websites look modern and interactive.
+            </p>
+
+            <div class="buttons">
+                <button id="scroll-button">Explore CSS</button>
+                <a href="#types" class="btn-link secondary">See Types</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="learn">
+            <div class="container grid">
+                <article class="card">
+                    <h2>Why we use CSS</h2>
+                    <p>
+                        CSS helps us create beautiful web pages. It improves readability, adds responsiveness,
+                        supports animations, separates content from design, and lets developers style large websites
+                        much faster and more cleanly.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>How CSS works</h2>
+                    <p>
+                        HTML defines the structure, while CSS gives the design. For example, CSS can set font size,
+                        margins, background colors, borders, hover effects, transitions, and animations.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Types of CSS</h2>
+                    <ul>
+                        <li>Inline CSS: written directly inside an HTML tag.</li>
+                        <li>Internal CSS: written inside the style tag in the head section.</li>
+                        <li>External CSS: written in a separate .css file and linked to HTML.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="types">
+            <div class="container">
+                <h2 class="section-title">CSS in action</h2>
+                <div class="grid">
+                    <article class="card image-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="CSS design workspace">
+                        <p>Modern websites use CSS for layout, spacing, and visual balance.</p>
+                    </article>
+
+                    <article class="card image-card">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=80" alt="Animated code and layout demo">
+                        <p>Parallax, glowing buttons, smooth scroll, and moving elements are all possible with CSS and JavaScript.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Who invented CSS?</h2>
+                <div class="grid">
+                    <article class="card profile-card">
+                        <img src="CSS1.png" alt="Håkon Wium Lie">
+                        <div>
+                            <p>
+                                <strong>Håkon Wium Lie</strong> is a Norwegian web pioneer and one of the key minds behind the creation of CSS.
+                                He first proposed the idea in 1994, helping shape how the web could be styled in a more structured and standards-based way.
+                            </p>
+                            <p>
+                                In 2005, while serving as the <strong>Chief Technology Officer (CTO) of Opera Software</strong>, Lie proposed and co-created the
+                                <strong>Acid2 test</strong>. This visual browser test suite was designed as a challenge to Microsoft and to push Internet Explorer 7
+                                toward proper compliance with open web styling standards.
+                            </p>
+                            <p>
+                                The Acid2 test became a landmark moment because it encouraged the browser industry to align more closely with modern web standards,
+                                especially for layout, styling, and visual rendering.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h2>How to create a CSS file</h2>
+                        <p>
+                            Create a file with the extension <strong>.css</strong>, write all styles inside it,
+                            and link it to your HTML page with the link tag.
+                        </p>
+                        <div class="code-box">
+                            &lt;link rel="stylesheet" href="styles.css"&gt;
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Important CSS Concepts</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h2>Selectors</h2>
+                        <p>
+                            Selectors choose which HTML elements should be styled, such as tags, classes, IDs,
+                            and pseudo-classes like hover.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h2>Properties</h2>
+                        <p>
+                            Properties define what to change, including color, background, padding, margin,
+                            border, font-size, and animation.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h2>Values</h2>
+                        <p>
+                            Values tell the browser how to apply the property, such as blue, 20px, center,
+                            or a rotating animation.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Simple CSS example</h2>
+                <div class="card">
+                    <div class="code-box">
+                        body {<br>
+                        &nbsp;&nbsp;background-color: #f8fbff;<br>
+                        &nbsp;&nbsp;color: #0f172a;<br>
+                        }<br><br>
+                        h1 {<br>
+                        &nbsp;&nbsp;text-align: center;<br>
+                        &nbsp;&nbsp;color: #2563eb;<br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">How to start using CSS</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h2>Step 1</h2>
+                        <p>Create an HTML page and add your content.</p>
+                    </article>
+
+                    <article class="card">
+                        <h2>Step 2</h2>
+                        <p>Create a separate <strong>.css</strong> file and write your rules.</p>
+                    </article>
+
+                    <article class="card">
+                        <h2>Step 3</h2>
+                        <p>Link that file in the HTML head using the link tag.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container stats">
+                <div class="stat"><strong>3</strong> Main CSS Types</div>
+                <div class="stat"><strong>1994</strong> CSS Origin Year</div>
+                <div class="stat"><strong>1</strong> External File</div>
+                <div class="stat"><strong>∞</strong> Design Possibilities</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        CSS makes the web colorful, structured, stylish, and alive.
+       <p> All Copyright &copy; |Reserved Made with ☕♥ </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            background-color: pink;
+            min-height: 67px;
+            padding: 12px 20px;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        ul li {
+            padding: 10px 23px;
+            font-weight: bold;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* ================= GREEN SECTION ================= */
+
+        .green-container {
+            background-color: green;
+            min-height: 80vh;
+            margin: 8px 10px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            padding: 82px 78px;
+            gap: 30px;
+        }
+
+        .box {
+            width: 327px;
+            height: 297px;
+            flex-shrink: 1;
+            border: 1px solid white;
+        }
+
+        .box-pink {
+            background-color: pink;
+        }
+
+        .box-blue {
+            background-color: rgb(36, 134, 247);
+        }
+
+        /* ================= CONTENT ================= */
+
+        .content {
+            border: 2px solid black;
+            border-radius: 42px;
+
+            width: min(40vw, 650px);
+            min-height: 110px;
+
+            margin: 40px auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            font-weight: bold;
+            padding: 25px;
+        }
+
+        /* ================= CIRCLE IMAGE ================= */
+
+        .circle{
+           margin: 11px;
+           display: flex;
+           justify-content: flex-end;
+           overflow: auto;
+        }
+
+        img{
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* ================= FOOTER ================= */
+
+        .footer {
+            background-color: pink;
+            min-height: 142px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer p {
+            padding-top: 5px;
+            font-weight: bold;
+        }
+
+        .footer pre {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            white-space: normal;
+            margin: 10px 0 0;
+        }
+
+
+        /* ================================================= */
+        /* ================= TABLET ======================== */
+        /* ================================================= */
+
+        @media (max-width: 900px) {
+
+            .green-container {
+                padding: 50px 40px;
+            }
+
+            .box {
+                width: 280px;
+                height: 250px;
+            }
+
+            .content {
+                width: 60vw;
+            }
+        }
+
+
+        /* ================================================= */
+        /* ================= MOBILE ======================== */
+        /* ================================================= */
+
+        @media (max-width: 600px) {
+
+            /* NAVBAR */
+
+            nav {
+                min-height: auto;
+                padding: 10px;
+            }
+
+            ul {
+                justify-content: center;
+            }
+
+            ul li {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+
+
+            /* GREEN SECTION */
+
+            .green-container {
+                min-height: auto;
+
+                margin: 8px;
+
+                padding: 30px 20px;
+
+                display: flex;
+                flex-direction: column;
+
+                align-items: center;
+                justify-content: flex-start;
+
+                gap: 25px;
+            }
+
+            .box {
+                width: min(85vw, 327px);
+                height: min(60vw, 250px);
+
+                flex-shrink: 0;
+            }
+
+
+            /* CONTENT */
+
+            .content {
+                width: calc(100% - 30px);
+
+                min-height: 100px;
+
+                margin: 30px auto;
+
+                padding: 20px;
+
+                font-size: 14px;
+
+                border-radius: 30px;
+            }
+
+
+            /* CIRCLE */
+
+            .circle {
+                justify-content: center;
+                margin: 20px 0;
+            }
+
+            img{
+                position: fixed;
+                bottom: 0;
+            }
+
+
+            /* FOOTER */
+
+            .footer {
+                min-height: auto;
+                padding: 20px 10px;
+            }
+
+            .footer p {
+                font-size: 13px;
+            }
+
+            .footer pre {
+                font-size: 13px;
+                white-space: normal;
+                line-height: 1.8;
+            }
+        }
+
+
+        /* ================================================= */
+        /* =============== VERY SMALL MOBILE ============== */
+        /* ================================================= */
+
+        @media (max-width: 400px) {
+
+            ul li {
+                padding: 7px 8px;
+                font-size: 12px;
+            }
+
+            .green-container {
+                padding: 25px 15px;
+            }
+
+            .box {
+                width: 85vw;
+                height: 55vw;
+            }
+
+            .content {
+                font-size: 13px;
+                padding: 18px;
+            }
+
+            .footer p,
+            .footer pre {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="green-container">
+        <div class="box-pink box"></div>
+        <div class="box-blue box"></div>
+    </div>
+
+    <div class="content">
+        Welcome to the Sigma Web Development Express!
+    </div>
+
+    <div class="circle">
+        <img src="https://ddesignplus.com/wp-content/uploads/2014/12/Circular-Logo-1022x1024.png" alt="Circle Image"
+            height="70px">
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2023 Sigma Web Development Express. All rights reserved.</p>
+
+            <pre>
+
+                Phone: +1 (123) 456-7890
+
+                Email: bhuvne@example.com
+            </pre>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

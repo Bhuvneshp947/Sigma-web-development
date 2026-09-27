@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color:rgb(223, 173, 238);
+        } */
+        /* Class Selector */
+        .one{
+            background-color:cornflowerblue;
+        }
+        /* ID Selector */
+        #two{
+            background-color:darkolivegreen;
+        }
+        /* Descendant Selector */
+        div span {
+            color:cadetblue
+        }
+        /* Child Selector */
+        div>p{
+            background-color:burlywood
+        }
+        /* Universal Selector */
+        *{
+            margin: 10;
+            padding: 10;
+        }
+        /* Pseudo Selectors */
+        a:visited{
+            color: rgba(35, 97, 6, 0.363);
+        }
+        a:link{
+            color:red
+        }
+        a:hover{
+            background-color: bisque;
+        }
+        a:active{
+            background-color: black;
+        }
+        p:first-child{
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur dolorum facere veritatis?</p>
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, temporibus.</p>
+    </div>
+    <div class="one">
+        <span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur dolorum facere veritatis?</p>
+        </span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, vitae accusamus!</p>
+    </div>
+    <div id="two">
+        <span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur dolorum facere veritatis?</p>
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti odit rerum!</p>
+    </div>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at laborum quis eligendi harum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at laborum quis eligendi harum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at laborum quis eligendi harum!</p>
+    </div>
+    <a href="https://www.amazon.com">Open Amazon</a>
+    <a href="https://www.messho.com">Open Messho</a>
+</body>
+</html>

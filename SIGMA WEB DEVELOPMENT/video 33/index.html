@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Multi Color Website</title>
+    <style>
+        /* 1. DEFINE YOUR CSS VARIABLES HERE */
+        :root {
+            /* Change this single color to change your whole website theme! */
+            --primary-color: #ff5722; 
+            
+            /* These variables automatically build dynamic contrast based on your primary color */
+            --nav-bg: var(--primary-color);
+            --text-color: #ffffff;
+            --hover-bg: rgba(0, 0, 0, 0.15);
+            --body-bg: #f5f7fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--body-bg);
+        }
+
+        /* 2. APPLY VARIABLES TO THE NAVBAR STYLE */
+        .navbar {
+            background-color: var(--nav-bg);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end; /* Pushes the menu items cleanly to the right side */
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar li {
+            padding: 20px 24px;
+            color: var(--text-color);
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* 3. HOVER ACTIONS USING SEMI-TRANSPARENT VARIABLE ACCENTS */
+        .navbar li:hover {
+            background-color: var(--hover-bg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- If you see this, comment "Bhupendra Jogi" in the
+  comments. He is my friend who has visited a lot of places in
+  the US. -->
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+
+    <div class="navbar">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>CONTACT</li>
+        </ul>
+    </div>
+</body>
+
+</html>

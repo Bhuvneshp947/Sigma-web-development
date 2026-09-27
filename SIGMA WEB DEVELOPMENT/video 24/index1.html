@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Alok - Premium Media</title> <!-- Import standard high-quality font for better appearance -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 30px 20px;
+        }
+
+        /* Container to fix center alignment without stretching */
+        .section-container {
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+        }
+
+        /* 1. Header with Soft 3D Look */
+        .one {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 16px;
+            display: inline-block;
+            /* Fixed: Takes only required width */
+            margin: 0 auto 40px auto;
+            box-shadow: 6px 6px 20px rgba(163, 177, 198, 0.5), -6px -6px 20px rgba(255, 255, 255, 0.8);
+        }
+
+        .one h1 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .one h2 {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 400;
+        }
+
+        /* 2. Fixed H3 Styling (Takes required width & soft depth) */
+        h3 {
+            display: inline-block;
+            /* Fixed: Width content ke hisab se lega */
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            background: #ffffff;
+            padding: 8px 24px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 10px rgba(163, 177, 198, 0.4), -3px -3px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Grid Layout for items */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 10px;
+            justify-items: center;
+        }
+
+        /* 3. Media Items 3D Styling */
+        .audio-card,
+        .video-card,
+        .image-card {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 14px;
+            width: 100%;
+            max-width: 320px;
+            box-shadow: 5px 5px 15px rgba(163, 177, 198, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .audio-card:hover,
+        .video-card:hover,
+        .image-card:hover {
+            transform: translateY(-4px);
+            /* Interactive lifting effect */
+        }
+
+        audio {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            /* Perfect video dimension */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            aspect-ratio: 1/1;
+            /* Keeps photos structured */
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body> <!-- Header Section -->
+    <div style="text-align: center;">
+        <div class="one">
+            <h1>🎶Welcome to DJ Alok🎧</h1>
+            <h2>Audio, Video & Photos</h2>
+        </div>
+    </div> <!-- Audio Section -->
+    <div class="section-container">
+        <h3>Premium Audio</h3>
+        <div class="grid-layout">
+            <div class="audio-card"><audio src="dkfilms-indian-dhol-music-362651_pJqzAVae.mp3" controls></audio></div>
+            <div class="audio-card"><audio src="psycho_Bj24m2M.mp3" controls></audio></div>
+            <div class="audio-card"><audio src="indian-song_6jEN8BVD.mp3" controls></audio></div>
+        </div>
+    </div> <!-- Video Section -->
+    <div class="section-container">
+        <h3>Premium Video Clips</h3>
+        <div class="grid-layout"> <!-- Added poster attribute for YouTube Thumbnail look -->
+            <div class="video-card"><video src="video2.mp4" poster="images (3).jfif" controls loop></video></div>
+            <div class="video-card"><video src="video3.mp4" poster="images (2).jfif" controls loop></video></div>
+            <div class="video-card"><video src="video4.mp4" poster="images (1).jfif" controls loop></video></div>
+        </div>
+    </div> <!-- Photo Section -->
+    <div class="section-container">
+        <h3>Premium Photos</h3>
+        <div class="grid-layout">
+            <div class="image-card"><img src="images (1).jfif" alt="photo"></div>
+            <div class="image-card"><img src="images (2).jfif" alt="photo"></div>
+            <div class="image-card"><img src="images (3).jfif" alt="photo"></div>
+        </div>
+    </div>
+</body>
+
+</html>

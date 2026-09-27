@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Quer</title>
+    <style>
+
+        body{
+            background-color: grey;
+        }
+
+        .box{
+            background-color: black;
+            height: 115px;
+            width: 169px;
+            margin: 10px;
+        }
+
+
+        @media screen and (orientation: landscape){
+            body{
+                border: 2px solid white;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bolder;
+                border-radius: 10px;
+                padding: 4px;
+                margin: 4px;
+                align-items: center;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            body{
+                background-color: white;
+            }
+
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        .boxes{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        Hey I am a grey body guy
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
